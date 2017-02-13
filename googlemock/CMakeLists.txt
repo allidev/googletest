@@ -72,6 +72,7 @@ include_directories("${gmock_SOURCE_DIR}/include"
 if (MSVC AND MSVC_VERSION EQUAL 1700)
   add_definitions(/D _VARIADIC_MAX=10)
 endif()
+ADD_DEFINITIONS(-D_GLIBCXX_USE_CXX11_ABI=0)
 
 ########################################################################
 #
